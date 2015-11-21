@@ -1,0 +1,15 @@
+text
+password
+datetime
+datetime-local
+date
+month
+time
+week
+number
+email
+url
+search
+tel
+color
+file

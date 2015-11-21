@@ -1,0 +1,51 @@
+<html>
+<head>
+
+  <!-- Import jQuery and Bootstrap -->
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/twitter-bootstrap-3.0.0/dist/css/bootstrap.css">
+  <script type="text/javascript" src="node_modules/twitter-bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+  <!--Button to show the modal when clicked-->
+  <button class="btn" type="button" data-toggle="modal" data-target="#modal-1">show modal</button>
+
+  <!--The modal with the form on it-->
+  <div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--Close button in top right-->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <!--Header text-->
+          <h3>Form Header</h3>
+        </div>
+
+        <div class="modal-body">
+          <!--Form-->
+          <form method="post" action="/">
+            <div class="form-group">
+              <label for="indicator">Indicator</label>
+              <input type="text" name="indicator" class="form-control" placeholder="Indicator">
+              <label for="country">Country</label>
+              <input type="text" name="country" class="form-control" placeholder="country">
+              <label for="value">Value</label>                
+              <input type="text" name="value" class="form-control" placeholder="value">
+              <label for="date">Date</label>
+              <input type="text" name="date" class="form-control" placeholder="date">
+            </div>
+            <!--Submit button-->
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <!--Another close button in the footer-->
+          <a href="#" class="btn" type="close" data-dismiss="modal">Close</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
