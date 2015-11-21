@@ -16,14 +16,15 @@ app.get('/', function (req, res) {
 // POST request from index
 // Stores the data submitted via the form in an object, responds to the user with that object, and logs the object to the console
 app.post('/', function (req, res) {
-	var currentPostData = {
-		indicator: req.body.indicator,
-		country: req.body.country,
-		value: req.body.value,
-		date: req.body.date
-	};
-  res.send(currentPostData);
-  console.log(currentPostData);
+	var thisPostsFormData = req.body; 
+	// var currentPostData = {
+	// 	indicator: req.body.indicator,
+	// 	country: req.body.country,
+	// 	value: req.body.value,
+	// 	date: req.body.date
+	// };
+  res.send('<a href="/">back</a><p><pre>' + JSON.stringify(thisPostsFormData) + '</pre></p>');
+  console.log(thisPostsFormData);
 });
 
 // Print the host and port to the console whenever there is a server request 
