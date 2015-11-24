@@ -1,4 +1,4 @@
-var data_indicators_dummy = {
+var dummyDataIndicators = {
     "indicators": [
         "indicatorA",
         "indicatorB",

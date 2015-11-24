@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 //EXAMPLE FORM SUBMISSION
 // GET request from index
 app.get('/', function (req, res) {
+	//QUERY for the list of the existing indicators
   res.sendFile(__dirname + '/form.html');
 });
 
