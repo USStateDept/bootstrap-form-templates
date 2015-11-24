@@ -7,7 +7,19 @@
 
 ###Notes
 
-###Some supported Bootstrap 3 form fields
+####Install
+Install node, npm & database
+
+git clone this repo
+
+cd bids2/
+
+npm install
+
+edit config file with your db settings
+
+npm start
+####Some supported Bootstrap 3 form fields
 
 + text
 + password
